@@ -1,0 +1,29 @@
+/* ========== start buttons ========== */
+@use "../helper/variables" as *;
+.btn {
+    background-color: $pink;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 295px;
+    padding: 19px;
+    font: {
+        size: 15px;
+        weight: 600;
+    }
+    transition: background $transition;
+    -webkit-transition: background $transition;
+    -moz-transition: background $transition;
+    -ms-transition: background $transition;
+    -o-transition: background $transition;
+    cursor: pointer;
+    &:hover {
+        background-color: $light-pink;
+    }
+}
+/* ========== end buttons ========== */

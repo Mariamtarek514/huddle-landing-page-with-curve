@@ -1,0 +1,38 @@
+/* ========== start statics section ========== */
+@use "../helper/variables" as *;
+.curvy {
+    background-color: $very-pale-blue;
+    padding: 1.5rem 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 3;
+        &__content {
+            flex-basis: 40%;
+            h3 {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin-bottom: 1rem;
+                color: $very-dark-cyan;
+            }
+            p {
+                line-height: 1.5rem;
+                font: {
+                    weight: 600;
+                    size: 15px;
+                }
+                width: 500px;
+            }
+        }
+    }
+    figure {
+        flex-basis: 40%;
+    }
+}
+.conversation {
+    background: #fff;
+}
+/* ========== end statics section ========== */

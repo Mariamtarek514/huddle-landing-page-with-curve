@@ -1,0 +1,87 @@
+/* ========== start media query ==========*/
+/* large screen*/
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*medium screen*/
+@media screen and (max-width: 991px) {
+    .curvy {
+        padding: 4rem 0;
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            row-gap: 4rem;
+            &__content {
+                width: 100%;
+                text-align: center;
+                p {
+                    width: 500px;
+                    max-width: 100%;
+                    margin: auto;
+                }
+            }
+            figure {
+                order: -1;
+                width: 500px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+/* small screen*/
+@media screen and (max-width: 765px) {
+    .landing {
+        &__container {
+            &-heading {
+                font-size: 1.6rem;
+                line-height: 2.5rem;
+            }
+            &-description {
+                font-size: 15px;
+            }
+        }
+    }
+    /*footer*/
+    .footer {
+        .container {
+            flex-direction: column;
+            row-gap: 4rem;
+            &__right,
+            &__left {
+                width: 100%;
+            }
+            &__left {
+                order: -1;
+            }
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .number .container {
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
+    }
+}
+/*screen*/
+@media screen and (max-width: 375px) {
+    .footer {
+        .container {
+            &__left {
+                form {
+                    flex-direction: column;
+                    row-gap: 1rem;
+                    input[type="button"] {
+                        margin-left: auto;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========== end media query ==========*/

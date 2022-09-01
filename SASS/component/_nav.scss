@@ -1,0 +1,39 @@
+/* ========== start nav section ==========*/
+@use "../helper/variables" as *;
+.nav {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15vh;
+        &-logo {
+            width: 150px;
+        }
+        &-btn {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border: 1px solid $pink;
+            color: $pink;
+            border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -ms-border-radius: 25px;
+            -o-border-radius: 25px;
+            padding: 8px 25px;
+            width: fit-content;
+            cursor: pointer;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+            &:hover {
+                box-shadow: 0 0 2px $light-pink;
+                border-color: $light-pink;
+                color: $light-pink;
+            }
+        }
+    }
+}
+/* ========== end nav section ==========*/

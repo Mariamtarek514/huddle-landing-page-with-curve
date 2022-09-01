@@ -1,0 +1,92 @@
+/* ========== start footer ========== */
+@use "../helper/variables" as *;
+.footer {
+    background-color: $very-dark-cyan;
+    color: #fff;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        &__right,
+        &__left {
+            flex-basis: 45%;
+        }
+        &__right {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            .logo img {
+                width: 150px;
+            }
+            p {
+                width: 288px;
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 1.5rem;
+                opacity: 0.9;
+            }
+            &-contact {
+                display: flex;
+                flex-direction: column;
+                row-gap: 0.8rem;
+                li {
+                    display: flex;
+                    column-gap: 15px;
+                    a {
+                        color: #fff;
+                        opacity: 0.9;
+                    }
+                }
+            }
+            &-social {
+                display: flex;
+                column-gap: 20px;
+                font-size: 20px;
+            }
+        }
+        &__left {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            p {
+                width: 320px;
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 1.5rem;
+                opacity: 0.9;
+            }
+            form {
+                display: flex;
+                column-gap: 25px;
+                input {
+                    outline: none;
+                    border: none;
+                    padding: 9px;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                }
+                input[type="button"] {
+                    background-color: $pink;
+                    color: #fff;
+                    padding: 11px 25px;
+                    font-size: 13px;
+                    transition: $transition;
+                    -webkit-transition: $transition;
+                    -moz-transition: $transition;
+                    -o-transition: $transition;
+                    -ms-transition: $transition;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $light-pink;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========== end footer ========== */

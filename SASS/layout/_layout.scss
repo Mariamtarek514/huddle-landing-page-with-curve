@@ -1,0 +1,23 @@
+/* ========== start layout settings==========*/
+@use "../helper/variables" as *;
+.container {
+    max-width: 968px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.p-y {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.curv__top {
+    margin-bottom: -5px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: $pink;
+}
+/* ========== end layout settings==========*/
